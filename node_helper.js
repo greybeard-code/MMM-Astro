@@ -37,12 +37,11 @@ module.exports = NodeHelper.create({
        let sign = this.config.sign;
 //console.log("Step 2 sign: "+sign);
 	     request({
-            url: "http://horoscope-api.herokuapp.com/horoscope/today/"+ this.config.sign,
-            method: 'GET'
+		url: "https://ohmanda.com/api/horoscope/"+ this.config.sign,
+                method: 'GET'
         }, (error, response, body) => {
 		if (!error && response.statusCode == 200) {
                 var dscope = JSON.parse(body);
-
 			}
       //console.log("Step 3 dscope: "+dscope);
 
