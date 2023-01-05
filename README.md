@@ -5,6 +5,8 @@ Formly MMM-Astrology
 
 Meet MMM-Astro with more info!
 
+Jan 2003 Update from GreyBeard. Changed data source and lost extended horiscopes
+
 ## 4 different icon sets to choose from!
 ![](examples/1.PNG) 
 ![](examples/2.PNG) 
@@ -13,7 +15,7 @@ Meet MMM-Astro with more info!
 
 ## Installation
      ~MagicMirror/modules
-     `git clone https://github.com/cowboysdude/MMM-Astro.git`
+     `git clone https://github.com/greybeard-code/MMM-Astro.git`
       cd
       ~MagicMirror/modules/MMM-Astro
       run - npm install
@@ -26,8 +28,6 @@ The following properties can be configured:
 | --- | ---
 | `sign` | The star sign to display. Must be lower case. <br><br> **Example values:** `leo`, `aries`, `pisces`<br>**Default value:** none
 | `iconSet` | The type of horoscope icon to display. <br><br> **Possible values:** `1`, `2`, `3`, `4`<br>**Default value: 1**  <br> 
-|`extend`| to show the extended forecast  <br><br> **Possible values:** `true`, `false` <br>**Default value: true** 
- 
  
  
  ## Add to Config.js
@@ -38,8 +38,7 @@ The following properties can be configured:
             position: 'top_right',
 			      config: {
 			      sign: "pisces",
-			      iconset: "1",
-			      extend: true 
+			      iconset: "1"
 			             }
            },
           
