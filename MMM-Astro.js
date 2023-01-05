@@ -16,7 +16,7 @@ Module.register('MMM-Astro', {
         maxWidth: '90%',
         fadeSpeed: 7,
         iconset: '1',
-        extend: true,
+        extend: false,
         debug: false,
 
         starsign: {
